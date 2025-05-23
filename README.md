@@ -56,6 +56,18 @@ streamlit run app.py
 
 Dashboard yang dibangun menyajikan visualisasi interaktif terkait performa mahasiswa, faktor-faktor yang berkontribusi terhadap dropout, dan status akhir mahasiswa berdasarkan berbagai kategori seperti program studi, jenis kehadiran, beasiswa, dan lainnya. Dashboard ini membantu manajemen dalam mengambil keputusan strategis berbasis data.
 
+Beberapa visualisasi utama yang ditampilkan dalam dashboard meliputi:
+- **Distribusi status akhir mahasiswa** (lulus, dropout, masih aktif)
+- **Performa akademik** berdasarkan program studi, rata-rata nilai semester, serta status beasiswa.
+- **Karakteristik demografis** mahasiswa yang dropout, termasuk status pernikahan dan kelompok usia.
+- **Analisis pola kehadiran** (daytime vs evening), yang memperlihatkan tren dropout pada kelas malam.
+
+Dashboard ini menjadi alat bantu strategis bagi pihak manajemen akademik untuk:
+
+- Mengidentifikasi kelompok mahasiswa yang berisiko tinggi mengalami dropout.
+- Memahami korelasi antara faktor-faktor tertentu (misalnya beasiswa atau program studi) dengan hasil akhir studi mahasiswa.
+- Membantu pengambilan keputusan berbasis data untuk perencanaan intervensi dini dan pengembangan kebijakan pendidikan.
+
 ![image](https://github.com/user-attachments/assets/0b6ebf27-c7b1-4f2d-88a0-0fd62ed18c90)
 ![image](https://github.com/user-attachments/assets/7fa8105c-e8c4-4b29-9ae6-f1dda40d7853)
 
@@ -96,7 +108,17 @@ Langkah-langkah menjalankan prototipe:
 
 ## Conclusion
 
-Proyek ini berhasil mengidentifikasi sejumlah faktor utama yang berkontribusi terhadap kemungkinan dropout mahasiswa. Model prediksi yang dibangun memiliki potensi untuk digunakan sebagai sistem pendukung keputusan dalam proses bimbingan mahasiswa berisiko tinggi. Selain itu, dashboard interaktif memungkinkan pihak manajemen untuk memantau performa mahasiswa secara lebih efektif.
+Hasil analisis menunjukkan bahwa tingginya tingkat dropout mahasiswa di Jaya Jaya Institut dipengaruhi oleh berbagai faktor yang saling terkait. Beberapa temuan penting meliputi:
+
+- Mahasiswa dengan nilai akademik rendah dan status non-beasiswa memiliki proporsi dropout tertinggi.
+
+- Program studi tertentu seperti Basic Education dan Equine Culture mencatat angka dropout yang relatif lebih tinggi dibandingkan jurusan lainnya.
+
+- Mahasiswa kelas malam (evening class) cenderung lebih berisiko mengalami dropout dibandingkan kelas reguler (daytime).
+
+- Mahasiswa berusia muda dan belum menikah mendominasi kelompok yang mengalami dropout, menunjukkan perlunya pendekatan personal dan dukungan akademik tambahan untuk kelompok ini.
+
+Sistem prediktif yang dikembangkan melalui model machine learning mampu mengidentifikasi mahasiswa dengan risiko tinggi untuk tidak menyelesaikan studi. Hal ini memberikan peluang bagi institusi untuk melakukan intervensi tepat waktu, baik melalui bimbingan akademik, konseling psikologis, maupun dukungan finansial tambahan.
 
 ### Rekomendasi Action Items
 
