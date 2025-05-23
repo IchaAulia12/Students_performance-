@@ -18,30 +18,70 @@ Jaya Jaya Institut adalah institusi pendidikan tinggi yang telah berdiri sejak t
 
 ### Persiapan
 
-**Sumber data:** Dataset "students' performance" dari pihak Jaya Jaya Institut.
+[**Sumber data:**](https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success) Dataset "students' performance" dari pihak Jaya Jaya Institut.
 
-**Setup environment:**
-```bash
-Python 3.10
-Jupyter Notebook
-Pandas
-Numpy
-Matplotlib
-Seaborn
-Scikit-learn
-Streamlit
-joblib
+Setup environment:
+
+```
+Tools yang digunakan:
+- Python (pandas, numpy, matplotlib, seaborn, scikit-learn, streamlit)
+- Looker Studio (untuk visualisasi dashboard)
+- Jupyter Notebook (untuk eksplorasi dan modelling)
+```
+## Setup menggunakan Google colab 
+```
+!pip install -r requirements.txt
+```
+## Setup Environment - Anaconda
+```
+conda create --name main-ds python=3.9
+conda activate main-ds
+pip install -r requirements.txt
+```
+## Setup dengan pipenv (alternatif)
+```
+mkdir proyek_analisis_data
+cd proyek_analisis_data
+pipenv install --python 3.9
+pipenv shell
+pip install -r requirements.txt
+```
+
+## Run steamlit app
+```
+streamlit run app.py
 ```
 
 ## Business Dashboard
 
 Dashboard yang dibangun menyajikan visualisasi interaktif terkait performa mahasiswa, faktor-faktor yang berkontribusi terhadap dropout, dan status akhir mahasiswa berdasarkan berbagai kategori seperti program studi, jenis kehadiran, beasiswa, dan lainnya. Dashboard ini membantu manajemen dalam mengambil keputusan strategis berbasis data.
 
-🔗 **Link Dashboard:** (Akan disediakan setelah deploy)
+![image](https://github.com/user-attachments/assets/0b6ebf27-c7b1-4f2d-88a0-0fd62ed18c90)
+![image](https://github.com/user-attachments/assets/7fa8105c-e8c4-4b29-9ae6-f1dda40d7853)
+
+
+🔗 [**Link Dashboard:**](https://lookerstudio.google.com/reporting/26aff7e5-df6e-4767-85ac-b9521b292c2f/page/1gQLF)
 
 ## Menjalankan Sistem Machine Learning
 
 Sistem machine learning yang dikembangkan dapat memprediksi kemungkinan seorang mahasiswa akan dropout atau lulus berdasarkan fitur-fitur akademik dan demografis.
+
+![image](https://github.com/user-attachments/assets/98f08982-43a0-4b3b-b679-0f6956e99c4d)
+
+sistem akan menampilkan hasil prediksi dengan tiga output sebagai berikut :
+
+**1. Dropout**
+
+![image](https://github.com/user-attachments/assets/48dd6e00-f679-4093-8d02-3b8c9cedb2a0)
+
+**2. Enrolled**
+
+![Screenshot 2025-05-22 091651](https://github.com/user-attachments/assets/958c591d-a50b-4617-86e1-69f42b6285bc)
+
+**3. Graduate**
+
+![Screenshot 2025-05-22 091530](https://github.com/user-attachments/assets/fbbd4437-d318-4e2a-ac72-307e9e12b802)
+
 
 ```bash
 Langkah-langkah menjalankan prototipe:
@@ -52,7 +92,7 @@ Langkah-langkah menjalankan prototipe:
 4. Backend model diload dari file pickle/joblib hasil training.
 ```
 
-🔗 **Link Prototype:** (Akan disediakan setelah deploy)
+🔗 [**Link Prototype:**](https://studentpredict.streamlit.app/)
 
 ## Conclusion
 
